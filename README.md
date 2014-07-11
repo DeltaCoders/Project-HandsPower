@@ -11,8 +11,8 @@ HowTo debug/run OpenCV-based code (MS VisualStudio 2013):
 6. Select "x64" on the type and "Win32" on "Copy settings from" > OK > Close
 7. RightClick on Debug|Win32>Add New Project Property Sheet...>Name it "OpenCV.props">Add
 8. DoubleClick on the new file "OpenCV" in the Debug|Win32 folder
-9. Common Preference>VC++ Directories> Include Directories > Add "C:\OpenCV\build\x86\vc10\bin" and "C:\OpenCV\build\include"
-10. Common Preference>VC++ Directories> Library Directories > Add "C:\OpenCV\build\x86\vc10\lib"
+9. Common Preference>VC++ Directories> Include Directories > Add "C:\OpenCV\build\x86\vc12\bin" and "C:\OpenCV\build\include"
+10. Common Preference>VC++ Directories> Library Directories > Add "C:\OpenCV\build\x86\vc12\lib"
 11. Common Preference>C/C++>Additional Include Directories > Add "C:\OpenCV\build\include\opencv2"
 12. Common Preference>Linker>Input>Additional Dipendencies > Add all these (249 is the 2.4.9 opencv version, change with yours):
 ``` 
