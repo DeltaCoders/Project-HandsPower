@@ -15,7 +15,7 @@ HowTo debug/run OpenCV-based code (MS VisualStudio 2013):
 10. Common Preference>VC++ Directories> Library Directories > Add "C:\OpenCV\build\x86\vc10\lib"
 11. Common Preference>C/C++>Additional Include Directories > Add "C:\OpenCV\build\include\opencv2"
 12. Common Preference>Linker>Input>Additional Dipendencies > Add all these (249 is the 2.4.9 opencv version, change with yours):
-```
+``` 
 opencv_calib3d249d.lib
 opencv_contrib249d.lib
 opencv_core249d.lib
@@ -35,7 +35,7 @@ opencv_ts249d.lib
 opencv_video249d.lib
 opencv_videostab249d.lib
 ```
-13. Repeat the steps from 7 to 11 but RightClick on Release|Win32, in the step 12 instead put these values (249 only if your opencv version is 2.4.9)
+13\. Repeat the steps from 7 to 11 but RightClick on Release|Win32, in the step 12 instead put these values (249 only if your opencv version is 2.4.9)
 ```
 opencv_calib3d249.lib
 opencv_contrib249.lib
@@ -56,5 +56,5 @@ opencv_ts249.lib
 opencv_video249.lib
 opencv_videostab249.lib
 ```
-14. Repeat the steps from 7 to 12 but with Debug|x64 and step 13 with Release|x64
-15. Enjoy OpenCV > VisualStudio > C++!
+14\. Repeat the steps from 7 to 12 but with Debug|x64 and step 13 with Release|x64
+15\. Enjoy OpenCV > VisualStudio > C++!
