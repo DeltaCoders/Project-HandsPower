@@ -56,4 +56,4 @@ opencv_ts249.lib
 opencv_video249.lib
 opencv_videostab249.lib
 ```
-14\. Repeat the steps from 7 to 12 but with Debug|x64 and step 13 with Release|x64
+14\. Repeat the steps from 7 to 12 but with Debug|x64 and step 13 with Release|x64 (obviously replace every path containing "x86" folder with "x64")
