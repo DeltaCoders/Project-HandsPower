@@ -9,8 +9,8 @@ HowTo debug/run OpenCV-based code (MS VisualStudio 2013):
 4. If it isn't present, add the Property Manager (View>Other Windows>Property Manager)
 5. Under the toolbars, click on Win32 combobox, then Configuration Manager and on "Active solution platform" click on <New...>
 6. Select "x64" on the type and "Win32" on "Copy settings from" > OK > Close
-7. RightClick on Debug|Win32>Add New Project Property Sheet...>Name it "OpenCV.props">Add
-8. DoubleClick on the new file "OpenCV" in the Debug|Win32 folder
+7. RightClick on Debug|Win32>Add New Project Property Sheet...>Name it "OpenCV\_D32.props" (D for debug, R for release, 32 for Win32, 64 for x64)>Add; do the same for the other folder (Debug|x64, Release|Win32, Release|x64);
+8. DoubleClick on the new file "OpenCV_D32" in the Debug|Win32 folder
 9. Common Preference>VC++ Directories> Include Directories > Add "C:\OpenCV\build\x86\vc12\bin" and "C:\OpenCV\build\include"
 10. Common Preference>VC++ Directories> Library Directories > Add "C:\OpenCV\build\x86\vc12\lib"
 11. Common Preference>C/C++>Additional Include Directories > Add "C:\OpenCV\build\include\opencv2"
@@ -22,7 +22,6 @@ opencv_core249d.lib
 opencv_features2d249d.lib
 opencv_flann249d.lib
 opencv_gpu249d.lib
-opencv_haartraining_engined.lib
 opencv_highgui249d.lib
 opencv_imgproc249d.lib
 opencv_legacy249d.lib
@@ -35,7 +34,7 @@ opencv_ts249d.lib
 opencv_video249d.lib
 opencv_videostab249d.lib
 ```
-13\. Repeat the steps from 7 to 11 but RightClick on Release|Win32, in the step 12 instead put these values (249 only if your opencv version is 2.4.9)
+13\. Repeat the steps from 8 to 11 but DoubleClick on "OpenCV_R32", in the step 12 instead put these values (249 only if your opencv version is 2.4.9, otherwise the correct version)
 ```
 opencv_calib3d249.lib
 opencv_contrib249.lib
@@ -43,7 +42,6 @@ opencv_core249.lib
 opencv_features2d249.lib
 opencv_flann249.lib
 opencv_gpu249.lib
-opencv_haartraining_engined.lib
 opencv_highgui249.lib
 opencv_imgproc249.lib
 opencv_legacy249.lib
@@ -56,4 +54,4 @@ opencv_ts249.lib
 opencv_video249.lib
 opencv_videostab249.lib
 ```
-14\. Repeat the steps from 7 to 12 but with Debug|x64 and step 13 with Release|x64 (obviously replace every path containing "x86" folder with "x64")
+14\. Repeat the steps from 8 to 12 but with OpenCV\_D64 and step 13 with OpenCV\_R64 (obviously replace every path containing "x86" folder with "x64")
